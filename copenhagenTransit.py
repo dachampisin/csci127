@@ -18,12 +18,25 @@ def computeFare(zone, ticketType):
      
      fare = 0
      
-     ###################################
-     ### FILL IN YOUR CODE HERE      ###
-     ### Other than your name above, ###
-     ### this is the only section    ###
-     ### you change in this program. ###
-     ###################################
+      if int(zoned) <= 2:
+        
+        if tickettype is "adult":
+            print("The fare is 23")
+       	 
+        if tickettype is "child":
+          print("The fare is 11.5")
+            
+      elif int(zoned) == 3 and tickettype is "adult":
+          print("The fare is 34.5")
+
+      elif int(zoned) == 4 and tickettype is "adult":
+          print("The fare is 46")
+
+      elif int(zoned) == 3 or int(zoned) == 4  and tickettype is "child":
+          print("The fare is 23")
+
+      else:
+          print("-1") 
 
      return(fare)
 
